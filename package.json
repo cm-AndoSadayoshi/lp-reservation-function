@@ -1,0 +1,11 @@
+{
+    "name": "lp-reservation-asset",
+    "version": "1.0.0",
+    "description": "Growth Pack for LINE - Reservation Package LP",
+    "scripts": {
+        "build": "mkdir -p public && cp index.html style.css script.js public/"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
