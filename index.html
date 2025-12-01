@@ -4,192 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growth Pack for LINE - Reservation Package</title>
+    <title>予約アセット | グロースパック for LINE</title>
+    <meta name="description" content="予約からリピーターを育てる、一番身近な予約システム。LINEミニアプリ開発支援「グロースパック for LINE」の予約アセット。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">グロースパック <span class="logo-sub">for <span
+                            class="line-brand">LINE</span></span></span>
+            </div>
+            <nav class="nav">
+                <a href="#contact" class="btn btn-sm btn-primary">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-content">
-            <h1>
-                そのLINE通知が、<br>
-                <span class="gradient-text">次の予約への入り口。</span>
-            </h1>
-            <p>
-                リピーターが育つ、一番身近な予約システム。<br>
-                ログイン不要、最短5秒で完了。「グロースパック for LINE」から、待望の予約パッケージが登場。
-            </p>
-            <div style="margin-bottom: 40px;">
-                <!-- Placeholder for Hero Image -->
-                <div style="background: #f1f5f9; width: 100%; max-width: 400px; height: 300px; margin: 0 auto; border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #94a3b8;">
-                    スマホ画面モックアップ (Placeholder)
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-catch">まだ、電話やポータルサイトだけで予約を受け付けていますか？</p>
+                <h1 class="hero-title">
+                    <span class="no-break">予約からリピーターを育てる、</span><br>
+                    <span class="gradient-text no-break">一番身近な予約システム</span>
+                </h1>
+                <p class="hero-desc">
+                    待望の「予約」アセットが登場。<br>
+                    ログイン不要、最短5秒で完了。ポータルサイト頼みの集客から、「自社でファンを育てる」運用へ。
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-secondary">デモを利用してみる</a>
                 </div>
             </div>
-            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="#contact" class="btn btn-primary">資料をダウンロードする（無料）</a>
-                <a href="#contact" class="btn" style="background: white; border: 1px solid var(--border-color);">導入相談をする</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="section">
-        <div class="container">
-            <div class="problem-header reveal">
-                <h2>予約管理で、<span class="gradient-text">こんなお悩み</span>ありませんか？</h2>
-            </div>
-
-            <div class="problem-grid">
-                <div class="problem-card reveal">
-                    <h3>📞 電話対応で施術が止まる</h3>
-                    <p>接客中や施術中に電話が鳴り、目の前のお客様をお待たせしてしまう。</p>
-                </div>
-                <div class="problem-card reveal">
-                    <h3>💸 ポータルサイトの手数料が高い</h3>
-                    <p>新規集客はポータル頼みだが、送客手数料が利益を圧迫している。自社の顧客リストがたまらない。</p>
-                </div>
-                <div class="problem-card reveal">
-                    <h3>🚫 無断キャンセル（No Show）が減らない</h3>
-                    <p>予約を忘れられてしまい、空き枠が無駄になる。電話確認の手間も大変。</p>
-                </div>
+            <div class="hero-visual reveal">
+                <img src="hero.png" alt="予約アセット イメージ" class="hero-img">
             </div>
         </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="section">
+    <!-- Challenges Section -->
+    <section class="section challenges" id="challenges">
         <div class="container">
-            <div class="intro-header reveal" style="text-align: center; margin-bottom: 80px;">
-                <h2>LINEミニアプリ × 予約パッケージで、<br><span class="gradient-text">その課題をすべて解決します。</span></h2>
+            <div class="section-header text-center">
+                <h2 class="section-title">こんなお悩みありませんか？</h2>
+                <p class="section-subtitle">予約管理や集客コストで、こんな課題を抱えていませんか。</p>
             </div>
-
-            <!-- Point 1 -->
-            <div class="solution-block reveal">
-                <div class="solution-visual">
-                    <span style="color: #94a3b8;">Image Placeholder</span>
+            <div class="challenges-grid">
+                <div class="challenge-card reveal">
+                    <div class="challenge-icon">📞</div>
+                    <p><strong>「電話対応」</strong>で施術や接客の手が止まってしまう。</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+                        目の前のお客様をお待たせしてしまい、機会損失や満足度低下につながっている。</p>
                 </div>
-                <div class="solution-content">
-                    <span class="card-badge">Point 1</span>
-                    <h3>圧倒的な使いやすさ (UX)<br><span class="gradient-text">ログイン不要・アプリDL不要</span></h3>
-                    <p>
-                        お客様はいつものLINEを開くだけ。IDやパスワードを忘れて離脱することがありません。
-                    </p>
+                <div class="challenge-card reveal">
+                    <div class="challenge-icon">💸</div>
+                    <p><strong>「送客手数料」</strong>が高く、利益を圧迫している。</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+                        新規集客はポータル頼みだが、来店ごとの手数料負担が重くのしかかる。</p>
                 </div>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="solution-block reverse reveal">
-                <div class="solution-visual">
-                    <span style="color: #94a3b8;">Image Placeholder</span>
+                <div class="challenge-card reveal">
+                    <div class="challenge-icon">🚫</div>
+                    <p><strong>「無断キャンセル」</strong>で、空き枠が無駄になる。</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">予約忘れによるNo
+                        Showが減らず、電話確認の手間もスタッフの負担になっている。</p>
                 </div>
-                <div class="solution-content">
-                    <span class="card-badge">Point 2</span>
-                    <h3>自動リマインドで来店率UP<br><span class="gradient-text">「うっかり忘れ」をLINE通知で防止</span></h3>
-                    <p>
-                        前日に自動でリマインドメッセージを配信。スタッフが電話をかける必要はありません。
-                    </p>
-                </div>
-            </div>
-
-            <!-- Point 3 -->
-            <div class="solution-block reveal">
-                <div class="solution-visual">
-                    <span style="color: #94a3b8;">Image Placeholder</span>
-                </div>
-                <div class="solution-content">
-                    <span class="card-badge">Point 3</span>
-                    <h3>低コスト・短期間導入<br><span class="gradient-text">パッケージだから、早くて安い</span></h3>
-                    <p>
-                        必要な機能をパッケージ化（グロースパック）しているため、フルスクラッチ開発に比べて圧倒的なスピードとコストパフォーマンスで導入可能です。
-                    </p>
+                <div class="challenge-card reveal">
+                    <div class="challenge-icon">📉</div>
+                    <p><strong>「顧客リスト」</strong>が自社に資産としてたまらない。</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px;">
+                        ポータル経由のお客様情報が活用できず、リピート施策が打てていない。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="section" style="background: var(--surface-color);">
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
         <div class="container">
-            <div class="intro-header reveal" style="text-align: center; margin-bottom: 60px;">
-                <h2>「予約」だけじゃない。<br><span class="gradient-text">店舗のDXを加速させる機能。</span></h2>
+            <div class="section-header text-center">
+                <h2 class="section-title">その悩み、「予約ミニアプリ」アセットで解決できます。</h2>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card reveal">
-                    <h3>📅 スマート予約カレンダー</h3>
-                    <p>リアルタイムの空き状況表示、コース・メニュー選択。</p>
+            <div class="solutions-grid reveal">
+                <div class="solution-card">
+                    <h3>ログイン不要・アプリDL不要。</h3>
+                    <p>お客様はいつものLINEを開くだけ。専用アプリのダウンロードや、面倒なID・パスワード入力は一切不要。最短5秒で予約が完了するため、途中離脱を防ぎます。</p>
                 </div>
-                <div class="feature-card reveal">
-                    <h3>💳 デジタル会員証連携</h3>
-                    <p>予約と同時に会員ランク情報を参照。優良顧客への特別対応も可能に。</p>
+                <div class="solution-card">
+                    <h3>自動リマインドで来店率UP。</h3>
+                    <p>予約前日にLINEで自動リマインドメッセージを配信。「うっかり忘れ」を未然に防ぎます。スタッフが電話確認をする工数もゼロになります。</p>
                 </div>
-                <div class="feature-card reveal">
-                    <h3>📩 セグメント配信連携</h3>
-                    <p>「最終来店から3ヶ月」のお客様へ、自動で再来店クーポンの配信と予約誘導が可能。</p>
-                </div>
-                <div class="feature-card reveal">
-                    <h3>⚙️ カスタマイズ対応</h3>
-                    <p>「スタッフ指名」や「事前決済」、「POSレジ連携」など、貴社の業務フローに合わせたカスタマイズも柔軟に対応します。</p>
+                <div class="solution-card">
+                    <h3>低コスト・短期間で自社予約システムを。</h3>
+                    <p>必要な機能をパッケージ化（グロースパック）しているため、フルスクラッチ開発に比べて圧倒的なスピードとコストパフォーマンスで導入可能です。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Use Case Section -->
-    <section class="section">
+    <!-- Comparison Section -->
+    <section class="section comparison" id="comparison">
         <div class="container">
-            <div class="intro-header reveal" style="text-align: center; margin-bottom: 60px;">
-                <h2>あらゆる来店型ビジネスで<br><span class="gradient-text">活用いただけます。</span></h2>
+            <div class="section-header text-center">
+                <h2 class="section-title">機能比較</h2>
+                <p class="section-subtitle">ポータルサイトや電話予約とここが違います。</p>
             </div>
+            <div class="comparison-table-wrapper reveal">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>比較項目</th>
+                            <th>一般的なポータルサイト・電話</th>
+                            <th class="highlight">予約ミニアプリアセット (本製品)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>手数料</td>
+                            <td>× 来店ごとに送客手数料が発生</td>
+                            <td class="highlight"><strong>◎ 月額固定（手数料ゼロ）</strong></td>
+                        </tr>
+                        <tr>
+                            <td>顧客データ</td>
+                            <td>△ ポータル側の資産（活用困難）</td>
+                            <td class="highlight"><strong>◎ 自社の資産（LINE ID連携）</strong></td>
+                        </tr>
+                        <tr>
+                            <td>予約確認</td>
+                            <td>△ 電話連絡が必要</td>
+                            <td class="highlight"><strong>◎ LINE自動リマインド</strong></td>
+                        </tr>
+                        <tr>
+                            <td>ユーザー体験</td>
+                            <td>△ 都度ログインが必要</td>
+                            <td class="highlight"><strong>◎ LINEから自動ログイン</strong></td>
+                        </tr>
+                        <tr>
+                            <td>リピート施策</td>
+                            <td>× 難しい</td>
+                            <td class="highlight"><strong>◎ セグメント配信等へ活用可能</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-            <div class="use-case-grid">
+    <!-- Use Cases Section -->
+    <section class="section use-cases" id="use-cases">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">活用シーン</h2>
+            </div>
+            <div class="use-cases-grid">
                 <div class="use-case-card reveal">
-                    <h3>Case A：美容室・ネイルサロン</h3>
-                    <p>スタッフ指名予約と、施術後の「次回予約」をLINEで完結。</p>
+                    <div class="use-case-header">
+                        <span class="use-case-tag">美容室・サロン</span>
+                        <h3>指名予約 × 次回予約</h3>
+                    </div>
+                    <p>スタッフ指名での予約はもちろん、施術後の「次回予約」もその場でLINE完結。紙の診察券をなくし、リピート率を向上させます。</p>
                 </div>
                 <div class="use-case-card reveal">
-                    <h3>Case B：クリニック・整骨院</h3>
-                    <p>電話予約を自動化し、受付スタッフの負担をゼロに。</p>
+                    <div class="use-case-header">
+                        <span class="use-case-tag">クリニック・整骨院</span>
+                        <h3>電話自動化 × 受付負担ゼロ</h3>
+                    </div>
+                    <p>診療時間中の電話対応を自動化。受付スタッフの負担を減らし、患者様への対応品質を向上させます。</p>
                 </div>
                 <div class="use-case-card reveal">
-                    <h3>Case C：フィットネスジム・スクール</h3>
-                    <p>会員証機能と連携し、入退室管理と予約をLINEひとつで。</p>
+                    <div class="use-case-header">
+                        <span class="use-case-tag">フィットネス・スクール</span>
+                        <h3>会員連携 × 入退室管理</h3>
+                    </div>
+                    <p>会員証機能と連携し、予約からチェックインまでLINEひとつで完結。スクールの体験予約などにも最適です。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Authority Section -->
-    <section class="section authority">
-        <div class="container authority-content reveal">
-            <h2>クラスメソッドが提供する<br><span class="gradient-text">開発支援パッケージ</span></h2>
-            <p style="margin-top: 30px; font-size: 1.1rem; color: var(--text-secondary);">
-                「グロースパック for LINE」は、クラスメソッド株式会社が提供するLINE活用支援サービスです。<br>
-                導入後の運用やUX改善（グロース支援）も含めて、貴社のビジネス成長をバックアップします。
-            </p>
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content reveal">
+                <h2 class="section-title">グロースパック for LINEについて</h2>
+                <p class="about-lead">クラスメソッドが提供する、LINEミニアプリ開発の最短ルート</p>
+                <p>「グロースパック for LINE」は、LINEミニアプリに必要な機能をパッケージ化したサービスです。<br>
+                    ゼロからの開発（フルスクラッチ）に比べ、<strong>圧倒的な低コスト・短期間</strong>での導入を実現します。</p>
+
+                <div class="synergy-section">
+                    <h3 class="synergy-title">他アセットとのシナジー</h3>
+                    <div class="synergy-grid">
+                        <div class="synergy-card">
+                            <h4>[会員証アセット] と連携。<br>「予約」と「会員ランク」を連動。</h4>
+                            <p>予約時に会員ランク情報を参照し、優良顧客（VIP）だけの特別コースを表示したり、ランクに応じた対応が可能になります。</p>
+                        </div>
+                        <div class="synergy-card">
+                            <h4>[セグメント配信] と連携。<br>「来店サイクル」に合わせた自動追客。</h4>
+                            <p>「最終来店から3ヶ月」のお客様へ自動で再来店クーポンを配信したり、予約完了者に事前アンケートを送るなど、1to1のコミュニケーションを実現します。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer & CTA -->
+    <!-- Flow Section -->
+    <section class="section flow" id="flow">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">導入フロー・サポート</h2>
+            </div>
+            <div class="flow-steps">
+                <div class="flow-step reveal">
+                    <div class="step-number">01</div>
+                    <h3>ヒアリング</h3>
+                    <p>貴社の業務フローや解決したい課題をお伺いします。</p>
+                </div>
+                <div class="flow-step reveal">
+                    <div class="step-number">02</div>
+                    <h3>要件定義・設定</h3>
+                    <p>メニュー構成やスタッフ設定、リマインドなどのルールを設計します。</p>
+                </div>
+                <div class="flow-step reveal">
+                    <div class="step-number">03</div>
+                    <h3>開発・導入</h3>
+                    <p>LINE公式アカウントとの連携や環境構築をスピーディに行います。</p>
+                </div>
+                <div class="flow-step reveal">
+                    <div class="step-number">04</div>
+                    <h3>グロース支援</h3>
+                    <p>導入後の予約データ分析や、UI/UX改善もサポートします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-cta reveal">
-                <h2>まずは、デモ画面や<br>詳細資料をご覧ください。</h2>
-                <p style="margin-bottom: 40px; color: var(--text-secondary);">既存システムとの連携や、カスタマイズのご相談も承ります。</p>
-                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                    <a href="#" class="btn btn-primary">資料請求・ホワイトペーパーダウンロード</a>
-                    <a href="#" class="btn" style="background: var(--surface-hover); border: 1px solid var(--border-color);">導入・カスタマイズの無料相談</a>
+                <h2 class="footer-title">「予約」をただの受付で終わらせない。<br>LINE活用で、リピーターが育つ仕組みを作りませんか？</h2>
+                <p class="footer-desc">まずは詳細な機能・事例がわかる資料をご覧ください。</p>
+                <div class="footer-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">資料ダウンロード（無料）</a>
+                    <a href="#" class="btn btn-secondary btn-lg">お問い合わせ・お見積もり</a>
                 </div>
             </div>
-
             <div class="company-info">
                 <p>クラスメソッド株式会社 (Classmethod, Inc.)</p>
-                <p>〒105-0003 東京都港区西新橋1-1-1 日比谷フォートタワー26階</p>
             </div>
         </div>
     </footer>
