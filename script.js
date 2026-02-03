@@ -29,4 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Demo button click handler - redirect based on device type
+    const demoButton = document.getElementById('demo-button');
+    if (demoButton) {
+        demoButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            const baseUrl = 'https://prototype-reservation-function.vercel.app';
+
+            // Check if the device is mobile
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+                || window.innerWidth <= 768;
+
+            // Redirect to appropriate URL
+            const targetUrl = isMobile ? `${baseUrl}/mini/home` : `${baseUrl}/demo/home`;
+            window.location.href = targetUrl;
+        });
+    }
 });
